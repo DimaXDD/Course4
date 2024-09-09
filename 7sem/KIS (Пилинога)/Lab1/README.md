@@ -49,13 +49,13 @@ Environment.GetEnvironmentVariable("имя_переменной").
 
 10) 	!Страница 42!:
 	Структура:
-	https://<account-name>.blob.core.windows.net/<container-name>/<blob-name>?<sas-token>
-	- https://<account-name>.blob.core.windows.net/ — это базовый URL для доступа к Azure Blob Storage. В нём:
-		<account-name> — это имя вашего аккаунта в Azure, под которым создано хранилище.
-		<container-name> — это имя контейнера, в котором хранятся blob-объекты (файлы).
-	- <blob-name> — это имя самого blob-файла (например, изображение или документ), который 
+	`https://<account-name>.blob.core.windows.net/<container-name>/<blob-name>?<sas-token>`
+	- `https://<account-name>.blob.core.windows.net/` — это базовый URL для доступа к Azure Blob Storage. В нём:
+		`<account-name>` — это имя вашего аккаунта в Azure, под которым создано хранилище.
+		`<container-name>` — это имя контейнера, в котором хранятся blob-объекты (файлы).
+	- `<blob-name>` — это имя самого blob-файла (например, изображение или документ), который 
 находится в контейнере.
-	- ?<sas-token> — это токен SAS (Shared Access Signature), который предоставляет временный 
+	- `?<sas-token>` — это токен SAS (Shared Access Signature), который предоставляет временный 
 доступ к blob-объекту. Токен содержит параметры, такие как время действия и типы разрешений 
 (например, доступ только для чтения).
 
