@@ -16,15 +16,14 @@ namespace Web.Pages
         private HttpClient _httpClient; // HTTP клиент для отправки запросов к API
         private Options _options; // Параметры приложения, например, URL API
 
-        // Конструктор, инициализирующий HttpClient и настройки приложения
         public IndexModel(HttpClient httpClient, Options options)
         {
-            _httpClient = httpClient; // Инициализация HTTP клиента
-            _options = options; // Инициализация параметров (например, URL API)
+            _httpClient = httpClient;
+            _options = options;
         }
 
         [BindProperty]
-        public List<string> ImageList { get; private set; } // Список строк (ссылок на изображения), который будет привязан к странице
+        public List<string> ImageList { get; private set; } // Список строк (ссылок на изображения)
 
         [BindProperty]
         public IFormFile Upload { get; set; } // Загружаемый пользователем файл через форму
@@ -32,7 +31,7 @@ namespace Web.Pages
         // Метод, вызываемый при GET-запросе к странице
         public async Task OnGetAsync()
         {
-            var imagesUrl = _options.ApiUrl; // Получаем URL API для получения изображений
+            var imagesUrl = _options.ApiUrl;
 
             // Выполняем GET-запрос к API для получения списка изображений в формате JSON
             string imagesJson = await _httpClient.GetStringAsync(imagesUrl);

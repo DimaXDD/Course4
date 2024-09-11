@@ -1,0 +1,9 @@
+﻿  pch.cpp
+  NTP_Client.cpp
+D:\MyFile\Univer\7sem\Распределённые и обланые системы\RIS_Lab1\NTP\NTP_Client\NTP_Client.cpp(87,24): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "/NTP_Client.cpp")
+  
+D:\MyFile\Univer\7sem\Распределённые и обланые системы\RIS_Lab1\NTP\NTP_Client\NTP_Client.cpp(88,24): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+  (компиляция исходного файла "/NTP_Client.cpp")
+  
+  NTP_Client.vcxproj -> D:\MyFile\Univer\7sem\Распределённые и обланые системы\RIS_Lab1\NTP\x64\Debug\NTP_Client.exe

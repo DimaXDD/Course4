@@ -1,0 +1,5 @@
+﻿  ClientU.cpp
+C:\Users\dimat\Desktop\RIS_Lab1\ClientU\ClientU\ClientU.cpp(123,26): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  (компиляция исходного файла "/ClientU.cpp")
+  
+  ClientU.vcxproj -> C:\Users\dimat\Desktop\RIS_Lab1\ServerU\Debug\ClientU.exe
