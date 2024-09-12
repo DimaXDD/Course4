@@ -8,12 +8,11 @@
 
 using namespace std;
 
-struct GETSINCHRO	///запрос Клиента на синхронизацию счетчика времени
+struct GETSINCHRO	// запрос Клиента на синхронизацию счетчика времени
 {
-	string cmd;		///всегда значение SINC
-	int curvalue;	///тек. значение счетчика времени
+	string cmd;		// всегда значение SINC
+	int curvalue;	// тек. значение счетчика времени
 };
-
 
 string GetErrorMsgText(int code)
 {
@@ -92,7 +91,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	int Tc = 1000;
 	cout << "Введите задержку в Tc: ";
 	cin >> Tc;
-	///int Cc = 0;		///счетчик t на К (=> при первом запросе curvalue=0)
+	///int Cc = 0;		///счетчик t на К (=> при первом запросе curvalue =0 )
 
 	SYSTEMTIME tm;
 	GETSINCHRO getsincro, setsincro;
@@ -100,7 +99,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	ZeroMemory(&getsincro, sizeof(getsincro));
 	getsincro.cmd = "SINC";
 	getsincro.curvalue = 0; //пункт 10
-
 
 	cout << "Client run" << endl;
 
@@ -124,7 +122,6 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	#pragma endregion
 
-
 		//curvalue = correction + 5 сек
 		//correction = clock() - curvalue
 
@@ -137,7 +134,8 @@ int _tmain(int argc, _TCHAR* argv[])
 		for (int i = 0; i < 10; i++)
 		{
 			GetSystemTime(&tm);
-			sendto(cS, (char *)&getsincro, sizeof(getsincro), 0, (sockaddr*)&serv, sizeof(serv));//пункт 6
+			// пункт 6
+			sendto(cS, (char *)&getsincro, sizeof(getsincro), 0, (sockaddr*)&serv, sizeof(serv));
 			recvfrom(cS, (char *)&setsincro, sizeof(setsincro), 0, (sockaddr*)&serv, &lensockaddr);
 
 
@@ -155,8 +153,8 @@ int _tmain(int argc, _TCHAR* argv[])
 			else 
 				getsincro.curvalue += setsincro.curvalue + Tc; //пункт 13
 			
-
-			Sleep(Tc); // пункт 12
+			// пункт 12
+			Sleep(Tc);
 		}
 
 		cout << "Average correction: " << avgcorr / 10 << endl;
