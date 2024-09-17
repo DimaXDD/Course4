@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_2</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        div {
+            max-width: 420px;
+            padding: 30px;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #17a2b8;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-bottom: 15px;
+        }
+
+            button:hover {
+                background-color: #138496;
+            }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+            input[type="number"]:focus {
+                border-color: #17a2b8;
+                outline: none;
+            }
+
+        p {
+            font-weight: 600;
+            font-size: 18px;
+            color: #495057;
+            margin: 10px 0;
+        }
+
+            p#final_result {
+                color: #28a745;
+            }
+
+            p#result {
+                color: #007bff;
+            }
+
+            p#stack {
+                color: #6c757d;
+            }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .container {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="Ajax('GET')">Get data</button><br />
+        <p id="final_result"></p>
+        <p id="result"></p>
+        <p id="stack"></p>
+        <button onclick="Ajax('DELETE')">Delete from stack</button><br />
+
+        <div class="form-group">
+            Result: <input type="number" id="resultInput" name="result" />
+            <button onclick="Ajax('POST')">Update result</button><br />
+        </div>
+        <div class="form-group">
+            Add: <input type="number" id="addInput" name="add" />
+            <button onclick="Ajax('PUT')">Add to stack</button><br />
+        </div>
+    </div>
+
+    <script>
+        const finalRes = $("#final_result");
+        const res = $("#result");
+        const stack = $("#stack");
+
+        const Ajax = (method) => {
+            let body = {};
+            if (method === "POST") {
+                body.result = +$("#resultInput").val();
+            }
+            if (method === "PUT") {
+                body.add = +$("#addInput").val();
+            }
+
+            let url = 'http://localhost:44328/api/StackDir';
+
+            if (method === "PUT" && body.add) {
+                url += `?add=${body.add}`;
+            }
+            if (method === "POST" && body.result) {
+                url += `?result=${body.result}`;
+            }
+
+            $.ajax({
+                url: url,
+                method: method,
+                contentType: 'application/x-www-form-urlencoded;charset=UTF-8',
+                success: function (data) {
+                    finalRes.html(`Final result: ${data.final_result}`);
+                    res.html(`Result: ${data.result}`);
+                    stack.html(`Stack: ${data.stackdata}`);
+                },
+                error: function (jqXHR) {
+                    alert(jqXHR.responseText || 'Something went wrong');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

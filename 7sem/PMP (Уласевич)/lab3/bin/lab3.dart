@@ -106,3 +106,35 @@ Stream<int> broadcastStream() {
   });
   return controller.stream;
 }
+
+void main() async {
+  var manager = Manager("Alice", 30);
+  var engineer = Engineer("Bob", 25);
+
+  var managerJson = manager.toJson();
+  var engineerJson = engineer.toJson();
+
+  print("Manager in JSON: $managerJson");
+  print("Engineer in JSON: $engineerJson");
+
+  var newManager = Employee.fromJson(managerJson);
+  var newEngineer = Employee.fromJson(engineerJson);
+
+  print("New Manager: ${newManager.name}, Age: ${newManager.age}");
+  print("New Engineer: ${newEngineer.name}, Age: ${newEngineer.age}");
+
+  manager.manage();
+  engineer.develop();
+
+  String data = await fetchData();
+  print(data);
+
+  await callFuture();
+
+  await callSingleSubscriptionStream();
+
+  var broadcast = broadcastStream();
+  broadcast.listen((value) {
+    print("Broadcast stream value: $value");
+  });
+}
