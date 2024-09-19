@@ -1,0 +1,8 @@
+﻿  mySolutionClient.cpp
+E:\4course\7sem\RIS (Тимонович)\lab1\mySolutionClient\mySolutionClient.cpp(123,37): warning C4244: =: преобразование "time_t" в "long", возможна потеря данных
+E:\4course\7sem\RIS (Тимонович)\lab1\mySolutionClient\mySolutionClient.cpp(138,28): warning C4244: инициализация: преобразование "_Rep" в "long", возможна потеря данных
+E:\4course\7sem\RIS (Тимонович)\lab1\mySolutionClient\mySolutionClient.cpp(138,28): warning C4244:         with
+E:\4course\7sem\RIS (Тимонович)\lab1\mySolutionClient\mySolutionClient.cpp(138,28): warning C4244:         [
+E:\4course\7sem\RIS (Тимонович)\lab1\mySolutionClient\mySolutionClient.cpp(138,28): warning C4244:             _Rep=__int64
+E:\4course\7sem\RIS (Тимонович)\lab1\mySolutionClient\mySolutionClient.cpp(138,28): warning C4244:         ]
+  mySolutionClient.vcxproj -> E:\4course\7sem\RIS (Тимонович)\lab1\x64\Debug\mySolutionClient.exe

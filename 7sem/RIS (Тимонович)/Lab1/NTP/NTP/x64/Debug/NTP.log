@@ -1,9 +1,0 @@
-﻿  pch.cpp
-  NTP.cpp
-D:\MyFile\Univer\7sem\Распределённые и обланые системы\RIS_Lab1\NTP\NTP\NTP.cpp(51,17): warning C4307: "*": переполнение целой константы со знаком
-  (компиляция исходного файла "/NTP.cpp")
-  
-D:\MyFile\Univer\7sem\Распределённые и обланые системы\RIS_Lab1\NTP\NTP\NTP.cpp(72,21): warning C4309: =: усечение константного значения
-  (компиляция исходного файла "/NTP.cpp")
-  
-  NTP.vcxproj -> D:\MyFile\Univer\7sem\Распределённые и обланые системы\RIS_Lab1\NTP\x64\Debug\NTP.exe

@@ -1,0 +1,1 @@
+## Проекты UDP-server, UDP-client, NTP protocol-server и NTP protocol-client - это сама лаба. Остальные проекты (mySolutionServer + mySolutionClient; lab1.UdpServerSTP +lab1.UdpServerSTP) - это другие способ синхронизации времени на клиенте и сервере, берите какой душе угодно, и сдавайте его 

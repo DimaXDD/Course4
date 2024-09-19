@@ -1,0 +1,3 @@
+﻿  mySolutionServer.cpp
+E:\4course\7sem\RIS (Тимонович)\lab1\mySolutionServer\mySolutionServer.cpp(115,51): warning C4244: =: преобразование "time_t" в "long", возможна потеря данных
+  mySolutionServer.vcxproj -> E:\4course\7sem\RIS (Тимонович)\lab1\x64\Debug\mySolutionServer.exe

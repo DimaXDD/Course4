@@ -1,0 +1,3 @@
+﻿  main.cpp
+E:\4course\7sem\RIS (Тимонович)\lab1\lab1.UdpClientSTP\main.cpp(145,18): warning C4244: инициализация: преобразование "time_t" в "int", возможна потеря данных
+  lab1.UdpClientSTP.vcxproj -> E:\4course\7sem\RIS (Тимонович)\lab1\x64\Debug\lab1.UdpClientSTP.exe

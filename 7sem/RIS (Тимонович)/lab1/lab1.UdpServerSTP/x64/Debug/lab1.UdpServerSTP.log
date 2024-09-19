@@ -1,0 +1,6 @@
+﻿  main.cpp
+E:\4course\7sem\RIS (Тимонович)\lab1\lab1.UdpServerSTP\main.cpp(164,30): warning C4244: =: преобразование "time_t" в "long", возможна потеря данных
+E:\4course\7sem\RIS (Тимонович)\lab1\lab1.UdpServerSTP\main.cpp(122,6): warning C4101: averageCorrection: неиспользованная локальная переменная
+E:\4course\7sem\RIS (Тимонович)\lab1\lab1.UdpServerSTP\main.cpp(121,10): warning C4101: c: неиспользованная локальная переменная
+E:\4course\7sem\RIS (Тимонович)\lab1\lab1.UdpServerSTP\main.cpp(146,7): warning C4101: correction: неиспользованная локальная переменная
+  lab1.UdpServerSTP.vcxproj -> E:\4course\7sem\RIS (Тимонович)\lab1\x64\Debug\lab1.UdpServerSTP.exe
