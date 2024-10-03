@@ -1,0 +1,1 @@
+## Чтобы понять лабы - читаем отчеты и вот эту ссылку смотрим - [ТЫК](https://microsoftlearning.github.io/AZ-204-DevelopingSolutionsforMicrosoftAzure/)

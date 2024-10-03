@@ -34,6 +34,20 @@ class PageViewScreen extends StatelessWidget {
   }
 }
 
+class CpuLoad {
+  static const MethodChannel _channel = MethodChannel('com.example.cpu/load');
+
+  static Future<double?> getCpuLoad() async {
+    try {
+      final double? cpuLoad = await _channel.invokeMethod('getCpuLoad');
+      return cpuLoad;
+    } on PlatformException catch (e) {
+      print("Failed to get CPU load: '${e.message}'.");
+      return null;
+    }
+  }
+}
+
 class FirstScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -364,8 +378,16 @@ class FirstScreen extends StatelessWidget {
               color: Colors.black,
             ),
           ),
+          ElevatedButton(
+            onPressed: () async {
+              double? batteryLevel = await CpuLoad.getCpuLoad();
+              print("Cpu Load: $batteryLevel%");
+            },
+            child: Text("Get Cpu Load"),
+          ),
         ],
       ),
+
     );
   }
 
