@@ -17,14 +17,13 @@ namespace PWS_3.Controllers
     public class StudentsController : ApiController
     {
         DB_Context context = new DB_Context();
-        
-       
+
+
         [HttpGet]
         [Route("api/Students.{format?}")]
         public object Get(HttpRequestMessage request, string format = "json")
         {
             Uri uri = request.RequestUri;
-            //string format = request.Content.Headers.ContentType?.MediaType;
             try
             {
                 var query = HttpUtility.ParseQueryString(uri.Query);
@@ -33,7 +32,7 @@ namespace PWS_3.Controllers
                 int ParseInt(string key, int defaultValue = 0) => Int32.TryParse(query[key], out var value) ? value : defaultValue;
 
                 int limit = ParseInt("limit", 999999);
-                int offset = ParseInt("offset");
+                int offset = ParseInt("offset", 0);
                 int minid = ParseInt("minid");
                 int maxid = ParseInt("maxid", 1000);
 
@@ -41,9 +40,11 @@ namespace PWS_3.Controllers
                 string globallike = query["globallike"];
                 string like = query["like"];
 
+                // Получение списка студентов с учетом пагинации
                 List<Student> students = context.GetList(limit, sort, offset, minid, maxid, like, globallike);
+                int totalStudents = context.GetTotalCount(minid, maxid, like, globallike); // Получаем общее количество студентов
 
-
+                // Определение, какие колонки будут возвращены
                 bool isId = false, isName = false, isNumber = false;
                 if (columns != "" && columns != null)
                 {
@@ -66,21 +67,23 @@ namespace PWS_3.Controllers
                 {
                     StudentDto dto = new StudentDto(student);
                     dto.Links = new Link[]
-                        {
-                            new Link("/api/students/" + student.Id, "GET", "Получить информацию"),
-                            new Link("/api/students/" + student.Id, "PUT", "Обновить информацию"),
-                            new Link("/api/students/" + student.Id, "DELETE", "Удалить студента")
-                        };
+                    {
+        new Link($"/api/students/{student.Id}", "GET", "Получить информацию"),
+        new Link($"/api/students/{student.Id}", "PUT", "Обновить информацию"),
+        new Link($"/api/students/{student.Id}", "DELETE", "Удалить студента")
+                    };
                     dto.IdSpecified = isId;
                     dto.NameSpecified = isName;
                     dto.NumberSpecified = isNumber;
                     result.Add(dto);
                 }
-                var Links = new Link[]
-                        {
-                            new Link("/api/students/", "POST", "Добавить информацию"),
-                        };
-                Models.Array array = new Models.Array(result, Links);
+
+                var links = new Link[]
+                {
+    new Link("/api/students/", "POST", "Добавить информацию"),
+                };
+
+                var array = new Models.Array(result, links);
 
                 XmlDocument xmlDoc = new XmlDocument();
                 XmlElement rootElement = xmlDoc.CreateElement("ArrayOfStudentDto");
@@ -112,38 +115,63 @@ namespace PWS_3.Controllers
                     rootElement.AppendChild(studentElement);
                 }
 
+
+                // Возвращаем ответ в нужном формате
                 if (format == "xml")
                 {
-                    XmlWriterSettings settings = new XmlWriterSettings
-                    {
-                        Indent = true,        // Включить форматирование
-                        IndentChars = "    ", // Установить символы отступа
-                        NewLineChars = "\n",    // Установить символ новой строки
-                        NewLineOnAttributes = false, // Новая строка только после тегов, а не после атрибутов
-                        NewLineHandling = NewLineHandling.Replace // Замена новых строк
-                    };
-
-                    using (StringWriter stringWriter = new StringWriter())
-                    {
-                        using (XmlWriter xmlWriter = XmlWriter.Create(stringWriter, settings))
-                        {
-                            xmlDoc.Save(xmlWriter);
-                        }
-
-                        HttpResponseMessage response = new HttpResponseMessage(HttpStatusCode.OK);
-                        response.Content = new StringContent(stringWriter.ToString(), Encoding.UTF8, "application/xml");
-                        return response;
-                    }
+                    return CreateXmlResponse(result, isId, isName, isNumber);
                 }
-                else if (format == "json" || format == null) return Json(array);
-                else return Content(HttpStatusCode.BadRequest, new ErrorDto(501), Configuration.Formatters.JsonFormatter);
+                else if (format == "json" || format == null)
+                {
+                    return Json(new { total = totalStudents, students = result });
+                }
+                else
+                {
+                    return Content(HttpStatusCode.BadRequest, new ErrorDto(501), Configuration.Formatters.JsonFormatter);
+                }
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 if (format == "xml") return Content(HttpStatusCode.BadRequest, new ErrorDto(500), Configuration.Formatters.XmlFormatter);
-                else if (format == "json" || format == null) return Content(HttpStatusCode.BadRequest, new ErrorDto(500), Configuration.Formatters.JsonFormatter);
-                else return Content(HttpStatusCode.BadRequest, new ErrorDto(501), Configuration.Formatters.JsonFormatter);
+                else return Content(HttpStatusCode.BadRequest, new ErrorDto(500), Configuration.Formatters.JsonFormatter);
             }
+        }
+
+        // Метод для создания XML ответа
+        private HttpResponseMessage CreateXmlResponse(List<StudentDto> students, bool isId, bool isName, bool isNumber)
+        {
+            XmlDocument xmlDoc = new XmlDocument();
+            XmlElement rootElement = xmlDoc.CreateElement("ArrayOfStudentDto");
+            xmlDoc.AppendChild(rootElement);
+
+            foreach (StudentDto dto in students)
+            {
+                XmlElement studentElement = xmlDoc.CreateElement("StudentDto");
+
+                if (isId) AddXmlElement(xmlDoc, studentElement, "Id", dto.Id.ToString());
+                if (isName) AddXmlElement(xmlDoc, studentElement, "Name", dto.Name);
+                if (isNumber) AddXmlElement(xmlDoc, studentElement, "Number", dto.Number);
+
+                // Добавление ссылок
+                XmlElement linksElement = xmlDoc.CreateElement("Links");
+                foreach (var link in dto.Links)
+                {
+                    XmlElement linkElement = xmlDoc.CreateElement("Link");
+                    AddXmlElement(xmlDoc, linkElement, "Href", link.Href);
+                    AddXmlElement(xmlDoc, linkElement, "Method", link.Method);
+                    AddXmlElement(xmlDoc, linkElement, "Message", link.Message);
+                    linksElement.AppendChild(linkElement);
+                }
+
+                studentElement.AppendChild(linksElement);
+                rootElement.AppendChild(studentElement);
+            }
+
+            var response = new HttpResponseMessage(HttpStatusCode.OK)
+            {
+                Content = new StringContent(xmlDoc.OuterXml, Encoding.UTF8, "application/xml")
+            };
+            return response;
         }
 
         [HttpGet]
@@ -151,7 +179,7 @@ namespace PWS_3.Controllers
         public object Get(int id, HttpRequestMessage request, string format = "json")
         {
             Uri uri = request.RequestUri;
-            
+
             //string format = request.Content.Headers.ContentType?.MediaType;
 
             try
@@ -419,7 +447,7 @@ namespace PWS_3.Controllers
             {
                 Methods = new[] { "GET", "POST" },
                 UriFormat = "/api/students.{xml/json}",
-                Method = new[] {"PUT", "DELETE"},
+                Method = new[] { "PUT", "DELETE" },
                 Uri = "/api/students.{xml/json}/{studentNum}"
             };
 

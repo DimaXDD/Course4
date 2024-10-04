@@ -47,6 +47,8 @@
     <div id="result2" name="result2" style="width: 100%; height: 100%; font-weight: bold; margin-bottom: 5px; border: 1px solid black;"></div>
     <div id="result" name="result" style="width: 100%; height: 100%; margin-bottom: 5px;"></div>
 
+    <div id="pagination" style="margin-top: 20px;"></div>
+
     <script>
 
         $(document).ready(function () {
@@ -62,33 +64,42 @@
             });
         });
 
-        var limit = 5;
-        var page = 0;
+        var totalStudents = 0; // Общее количество студентов (получается из API)
+        var limit = 5; // Количество студентов на странице
+        var currentPage = 1; // Текущая страница
 
         function getStudents() {
             let data = {};
             let format;
+
+            // Получение параметра сортировки
             var ele = document.getElementsByName('sort');
-            for (i = 0; i < ele.length; i++) {
+            for (let i = 0; i < ele.length; i++) {
                 if (ele[i].checked)
                     data["sort"] = ele[i].value;
             }
+
+            // Получение лимита студентов на странице
             if ($("#limit").val() != "") {
                 data["limit"] = $("#limit").val();
                 this.limit = data["limit"];
+            } else {
+                data["limit"] = this.limit; // Использовать предыдущее значение
             }
-            else data["limit"] = this.limit;
-            if ($("#offset").val() != "") {
-                var of = $("#offset").val();
-                data["offset"] = this.limit * this.page + parseInt(of);
-            }
-            else data["offset"] = this.limit * this.page;
+
+            // Установка смещения на основе текущей страницы
+            data["offset"] = this.limit * this.page;
+
+            // Получение минимального и максимального ID
             if ($("#minid").val() != "") data["minid"] = $("#minid").val();
             if ($("#maxid").val() != "") data["maxid"] = $("#maxid").val();
+
             if (data["maxid"] < data["minid"]) {
                 $("#result2").html('Error: Max Id < Min Id');
                 return;
             }
+
+            // Получение выбранных колонок
             data["columns"] = '';
             ele = document.getElementsByName('columnId');
             if (ele[0].checked) data["columns"] += 'id,';
@@ -97,14 +108,18 @@
             ele = document.getElementsByName('columnNumber');
             if (ele[0].checked) data["columns"] += 'number';
 
+            // Получение значений для фильтрации
             if ($("#like").val() != "") data["like"] = $("#like").val();
-            if ($("#globalike").val() != "") data["globallike"] = $("#globallike").val();
+            if ($("#globallike").val() != "") data["globallike"] = $("#globallike").val();
+
+            // Получение выбранного формата
             ele = document.getElementsByName('format');
-            for (i = 0; i < ele.length; i++) {
+            for (let i = 0; i < ele.length; i++) {
                 if (ele[i].checked)
                     format = ele[i].value;
             }
-            $("#result").html(' ');
+
+            $("#result").html('');
 
             var apiUrl = "/api/Students." + format;
 
@@ -114,25 +129,41 @@
                 type: "GET",
                 contentType: format === "xml" ? "application/xml" : "application/json",
                 success: result => {
-                    this.page = 0
-
                     if (format == "xml") {
                         let students = result.querySelectorAll("ArrayOfStudentDto StudentDto");
                         console.log("Number of students:", students.length);
-                        console.log(result);
                         this.generateList(result);
                     } else {
                         if (result.error) {
                             $("#result2").html(result.error);
                             return;
                         }
-                        this.generateList(result.StudentDtos);
+                        this.generateList(result.students); // Теперь результат содержит общее количество студентов
+                        this.updatePagination(result.total); // Обновите пагинацию
                     }
                 },
-                error: (error) => {
+                error: error => {
                     this.sendError(error, data["format"]);
                 }
-            })
+            });
+        }
+
+        // Функция для обновления пагинации
+        function updatePagination(totalStudents) {
+            const totalPages = Math.ceil(totalStudents / this.limit);
+            let paginationHtml = '';
+
+            for (let i = 1; i <= totalPages; i++) {
+                paginationHtml += `<button onclick="goToPage(${i})">${i}</button>`;
+            }
+
+            $("#pagination").html(paginationHtml);
+        }
+
+        // Функция для переключения страниц
+        function goToPage(page) {
+            this.page = page - 1; // Устанавливаем текущую страницу (индекс начинается с 0)
+            getStudents(); // Запрашиваем студентов для новой страницы
         }
 
         function addStudent() {

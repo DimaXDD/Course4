@@ -74,5 +74,24 @@ namespace PWS_3.Models
             this.SaveChanges();
             return removed;
         }
+
+        public int GetTotalCount(int minid, int maxid, string like, string globallike)
+        {
+            var students = this.Students.AsQueryable();
+
+            students = students.Where(s => s.Id >= minid && s.Id <= maxid);
+
+            if (!string.IsNullOrEmpty(globallike))
+            {
+                students = students.Where(s => (s.Id.ToString() + s.Name + s.Phone).Contains(globallike));
+            }
+
+            if (!string.IsNullOrEmpty(like))
+            {
+                students = students.Where(s => s.Name.Contains(like));
+            }
+
+            return students.Count();
+        }
     }
 }
