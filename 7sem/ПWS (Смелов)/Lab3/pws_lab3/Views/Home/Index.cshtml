@@ -64,33 +64,30 @@
             });
         });
 
-        var totalStudents = 0; // Общее количество студентов (получается из API)
-        var limit = 5; // Количество студентов на странице
-        var currentPage = 1; // Текущая страница
+        var totalStudents = 0;
+        var limit = 5;
+        let currentPage = 1;
+        let totalPages = 0;
 
         function getStudents() {
             let data = {};
             let format;
 
-            // Получение параметра сортировки
             var ele = document.getElementsByName('sort');
             for (let i = 0; i < ele.length; i++) {
                 if (ele[i].checked)
                     data["sort"] = ele[i].value;
             }
 
-            // Получение лимита студентов на странице
             if ($("#limit").val() != "") {
                 data["limit"] = $("#limit").val();
                 this.limit = data["limit"];
             } else {
-                data["limit"] = this.limit; // Использовать предыдущее значение
+                data["limit"] = this.limit;
             }
 
-            // Установка смещения на основе текущей страницы
-            data["offset"] = this.limit * this.page;
+            data["offset"] = this.limit * (currentPage - 1);
 
-            // Получение минимального и максимального ID
             if ($("#minid").val() != "") data["minid"] = $("#minid").val();
             if ($("#maxid").val() != "") data["maxid"] = $("#maxid").val();
 
@@ -99,7 +96,6 @@
                 return;
             }
 
-            // Получение выбранных колонок
             data["columns"] = '';
             ele = document.getElementsByName('columnId');
             if (ele[0].checked) data["columns"] += 'id,';
@@ -108,11 +104,9 @@
             ele = document.getElementsByName('columnNumber');
             if (ele[0].checked) data["columns"] += 'number';
 
-            // Получение значений для фильтрации
             if ($("#like").val() != "") data["like"] = $("#like").val();
             if ($("#globallike").val() != "") data["globallike"] = $("#globallike").val();
 
-            // Получение выбранного формата
             ele = document.getElementsByName('format');
             for (let i = 0; i < ele.length; i++) {
                 if (ele[i].checked)
@@ -138,8 +132,10 @@
                             $("#result2").html(result.error);
                             return;
                         }
-                        this.generateList(result.students); // Теперь результат содержит общее количество студентов
-                        this.updatePagination(result.total); // Обновите пагинацию
+                        this.generateList(result.students);
+                        totalPages = Math.ceil(result.total / this.limit);
+                        currentPage = Math.floor(data["offset"] / this.limit) + 1;
+                        this.updatePagination(totalPages)
                     }
                 },
                 error: error => {
@@ -148,22 +144,20 @@
             });
         }
 
-        // Функция для обновления пагинации
-        function updatePagination(totalStudents) {
-            const totalPages = Math.ceil(totalStudents / this.limit);
+        function updatePagination(totalPages) {
             let paginationHtml = '';
 
-            for (let i = 1; i <= totalPages; i++) {
-                paginationHtml += `<button onclick="goToPage(${i})">${i}</button>`;
+            for (let page = 1; page <= totalPages; page++) {
+                const isActive = (page === currentPage) ? 'active' : '';
+                paginationHtml += `<button class="${isActive}" onclick="goToPage(${page})">${page}</button>`;
             }
 
             $("#pagination").html(paginationHtml);
         }
 
-        // Функция для переключения страниц
-        function goToPage(page) {
-            this.page = page - 1; // Устанавливаем текущую страницу (индекс начинается с 0)
-            getStudents(); // Запрашиваем студентов для новой страницы
+        function goToPage(pageNumber) {
+            currentPage = pageNumber;
+            getStudents();
         }
 
         function addStudent() {

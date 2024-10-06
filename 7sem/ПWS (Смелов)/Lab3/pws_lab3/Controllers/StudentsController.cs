@@ -4,6 +4,7 @@ using PWS_3.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Text;
@@ -11,13 +12,13 @@ using System.Web;
 using System.Web.Http;
 using System.Xml;
 using System.Xml.Linq;
+using System.Xml.Serialization;
 
 namespace PWS_3.Controllers
 {
     public class StudentsController : ApiController
     {
         DB_Context context = new DB_Context();
-
 
         [HttpGet]
         [Route("api/Students.{format?}")]
@@ -40,13 +41,13 @@ namespace PWS_3.Controllers
                 string globallike = query["globallike"];
                 string like = query["like"];
 
-                // Получение списка студентов с учетом пагинации
+                // Получение списка студентов с учётом пагинации
                 List<Student> students = context.GetList(limit, sort, offset, minid, maxid, like, globallike);
                 int totalStudents = context.GetTotalCount(minid, maxid, like, globallike); // Получаем общее количество студентов
 
                 // Определение, какие колонки будут возвращены
                 bool isId = false, isName = false, isNumber = false;
-                if (columns != "" && columns != null)
+                if (!string.IsNullOrEmpty(columns))
                 {
                     if (columns.Contains("id"))
                         isId = true;
@@ -68,9 +69,9 @@ namespace PWS_3.Controllers
                     StudentDto dto = new StudentDto(student);
                     dto.Links = new Link[]
                     {
-        new Link($"/api/students/{student.Id}", "GET", "Получить информацию"),
-        new Link($"/api/students/{student.Id}", "PUT", "Обновить информацию"),
-        new Link($"/api/students/{student.Id}", "DELETE", "Удалить студента")
+                new Link($"/api/students/{student.Id}", "GET", "Получить информацию"),
+                new Link($"/api/students/{student.Id}", "PUT", "Обновить информацию"),
+                new Link($"/api/students/{student.Id}", "DELETE", "Удалить студента")
                     };
                     dto.IdSpecified = isId;
                     dto.NameSpecified = isName;
@@ -80,50 +81,95 @@ namespace PWS_3.Controllers
 
                 var links = new Link[]
                 {
-    new Link("/api/students/", "POST", "Добавить информацию"),
+            new Link("/api/students/", "POST", "Добавить информацию"),
                 };
 
-                var array = new Models.Array(result, links);
+                // Рассчитываем количество страниц и текущую страницу
+                int totalPages = (int)Math.Ceiling((double)totalStudents / limit);
+                int currentPage = (offset / limit) + 1;
 
-                XmlDocument xmlDoc = new XmlDocument();
-                XmlElement rootElement = xmlDoc.CreateElement("ArrayOfStudentDto");
-                xmlDoc.AppendChild(rootElement);
-
-                foreach (StudentDto dto in result)
-                {
-                    XmlElement studentElement = xmlDoc.CreateElement("StudentDto");
-
-                    // Добавить данные для каждой записи
-                    if (isId) AddXmlElement(xmlDoc, studentElement, "Id", dto.Id.ToString());
-                    if (isName) AddXmlElement(xmlDoc, studentElement, "Name", dto.Name);
-                    if (isNumber) AddXmlElement(xmlDoc, studentElement, "Number", dto.Number);
-
-                    // Добавить Links
-                    XmlElement linksElement = xmlDoc.CreateElement("Links");
-                    foreach (var link in dto.Links)
-                    {
-                        XmlElement linkElement = xmlDoc.CreateElement("Link");
-
-                        AddXmlElement(xmlDoc, linkElement, "Href", link.Href);
-                        AddXmlElement(xmlDoc, linkElement, "Method", link.Method);
-                        AddXmlElement(xmlDoc, linkElement, "Message", link.Message);
-
-                        linksElement.AppendChild(linkElement);
-                    }
-
-                    studentElement.AppendChild(linksElement);
-                    rootElement.AppendChild(studentElement);
-                }
-
-
-                // Возвращаем ответ в нужном формате
+                // Если формат xml
                 if (format == "xml")
                 {
-                    return CreateXmlResponse(result, isId, isName, isNumber);
+                    XmlDocument xmlDoc = new XmlDocument();
+                    XmlElement rootElement = xmlDoc.CreateElement("ArrayOfStudentDto");
+                    xmlDoc.AppendChild(rootElement);
+
+                    // Добавляем студентов в XML
+                    foreach (StudentDto dto in result)
+                    {
+                        XmlElement studentElement = xmlDoc.CreateElement("StudentDto");
+
+                        if (isId) AddXmlElement(xmlDoc, studentElement, "Id", dto.Id.ToString());
+                        if (isName) AddXmlElement(xmlDoc, studentElement, "Name", dto.Name);
+                        if (isNumber) AddXmlElement(xmlDoc, studentElement, "Number", dto.Number);
+
+                        // Добавляем ссылки
+                        XmlElement linksElement = xmlDoc.CreateElement("Links");
+                        foreach (var link in dto.Links)
+                        {
+                            XmlElement linkElement = xmlDoc.CreateElement("Link");
+                            AddXmlElement(xmlDoc, linkElement, "Href", link.Href);
+                            AddXmlElement(xmlDoc, linkElement, "Method", link.Method);
+                            AddXmlElement(xmlDoc, linkElement, "Message", link.Message);
+                            linksElement.AppendChild(linkElement);
+                        }
+
+                        studentElement.AppendChild(linksElement);
+                        rootElement.AppendChild(studentElement);
+                    }
+
+                    // Добавляем метаданные пагинации в XML
+                    XmlElement paginationElement = xmlDoc.CreateElement("Pagination");
+                    AddXmlElement(xmlDoc, paginationElement, "TotalPages", totalPages.ToString());
+                    AddXmlElement(xmlDoc, paginationElement, "CurrentPage", currentPage.ToString());
+
+                    XmlElement pageLinksElement = xmlDoc.CreateElement("PageLinks");
+                    for (int i = 1; i <= totalPages; i++)
+                    {
+                        XmlElement pageLinkElement = xmlDoc.CreateElement("PageLink");
+                        AddXmlElement(xmlDoc, pageLinkElement, "Href", $"/api/students?page={i}");
+                        AddXmlElement(xmlDoc, pageLinkElement, "Method", "GET");
+                        AddXmlElement(xmlDoc, pageLinkElement, "PageNumber", i.ToString());
+                        pageLinksElement.AppendChild(pageLinkElement);
+                    }
+
+                    paginationElement.AppendChild(pageLinksElement);
+                    rootElement.AppendChild(paginationElement);
+
+                    // Настройки для форматирования XML
+                    XmlWriterSettings settings = new XmlWriterSettings
+                    {
+                        Indent = true,
+                        IndentChars = "    ",
+                        NewLineChars = "\n",
+                        NewLineOnAttributes = false,
+                        NewLineHandling = NewLineHandling.Replace
+                    };
+
+                    using (StringWriter stringWriter = new StringWriter())
+                    {
+                        using (XmlWriter xmlWriter = XmlWriter.Create(stringWriter, settings))
+                        {
+                            xmlDoc.Save(xmlWriter);
+                        }
+
+                        HttpResponseMessage response = new HttpResponseMessage(HttpStatusCode.OK);
+                        response.Content = new StringContent(stringWriter.ToString(), Encoding.UTF8, "application/xml");
+                        return response;
+                    }
                 }
+
+                // Если формат json
                 else if (format == "json" || format == null)
                 {
-                    return Json(new { total = totalStudents, students = result });
+                    var currentPageLink = new
+                    {
+                        Href = $"/api/pages/{currentPage}",
+                        Method = "GET"
+                    };
+
+                    return Json(new { total = totalStudents, students = result, links, pages = new[] { currentPageLink } });
                 }
                 else
                 {
@@ -137,22 +183,27 @@ namespace PWS_3.Controllers
             }
         }
 
-        // Метод для создания XML ответа
-        private HttpResponseMessage CreateXmlResponse(List<StudentDto> students, bool isId, bool isName, bool isNumber)
+        private void AddXmlElement(XmlDocument xmlDoc, XmlElement parentElement, string elementName, string value)
+        {
+            XmlElement element = xmlDoc.CreateElement(elementName);
+            element.InnerText = value;
+            parentElement.AppendChild(element);
+        }
+
+        private XmlDocument CreateXmlResponse(List<StudentDto> result, bool isId, bool isName, bool isNumber, Link[] links)
         {
             XmlDocument xmlDoc = new XmlDocument();
             XmlElement rootElement = xmlDoc.CreateElement("ArrayOfStudentDto");
             xmlDoc.AppendChild(rootElement);
 
-            foreach (StudentDto dto in students)
+            foreach (StudentDto dto in result)
             {
                 XmlElement studentElement = xmlDoc.CreateElement("StudentDto");
-
                 if (isId) AddXmlElement(xmlDoc, studentElement, "Id", dto.Id.ToString());
                 if (isName) AddXmlElement(xmlDoc, studentElement, "Name", dto.Name);
                 if (isNumber) AddXmlElement(xmlDoc, studentElement, "Number", dto.Number);
 
-                // Добавление ссылок
+                // Добавить Links
                 XmlElement linksElement = xmlDoc.CreateElement("Links");
                 foreach (var link in dto.Links)
                 {
@@ -167,13 +218,81 @@ namespace PWS_3.Controllers
                 rootElement.AppendChild(studentElement);
             }
 
-            var response = new HttpResponseMessage(HttpStatusCode.OK)
+            // Добавить общие ссылки в корень
+            XmlElement generalLinksElement = xmlDoc.CreateElement("Links");
+            foreach (var link in links)
             {
-                Content = new StringContent(xmlDoc.OuterXml, Encoding.UTF8, "application/xml")
-            };
-            return response;
+                XmlElement linkElement = xmlDoc.CreateElement("Link");
+                AddXmlElement(xmlDoc, linkElement, "Href", link.Href);
+                AddXmlElement(xmlDoc, linkElement, "Method", link.Method);
+                AddXmlElement(xmlDoc, linkElement, "Message", link.Message);
+                generalLinksElement.AppendChild(linkElement);
+            }
+            rootElement.AppendChild(generalLinksElement);
+
+            return xmlDoc;
         }
 
+        [HttpGet]
+        [Route("api/pages/{page}.{format?}")]
+        public object GetPage(int page, string format = "json", int minid = 0, int maxid = int.MaxValue, string like = "", string globallike = "")
+        {
+            try
+            {
+                int limit = 5;
+                int offset = (page - 1) * limit;
+
+                int totalStudents = context.GetTotalCount(minid, maxid, like, globallike);
+
+                List<Student> students = context.GetListWithFilters(minid, maxid, like, globallike, limit, offset);
+
+                List<StudentDto> result = new List<StudentDto>();
+                foreach (Student student in students)
+                {
+                    StudentDto dto = new StudentDto(student);
+                    dto.Links = new Link[]
+                    {
+                        new Link($"/api/students/{student.Id}", "GET", "Получить информацию"),
+                        new Link($"/api/students/{student.Id}", "PUT", "Обновить информацию"),
+                        new Link($"/api/students/{student.Id}", "DELETE", "Удалить студента")
+                    };
+                    result.Add(dto);
+                }
+
+                var links = new Link[]
+                {
+                    new Link($"/api/pages/{page}", "GET", "Переход на текущую страницу")
+                };
+
+                if (format == "xml")
+                {
+                    return CreateXmlResponse(result, true, true, true, links);
+                }
+                else if (format == "json")
+                {
+                    var currentPageLink = new
+                    {
+                        Href = $"/api/pages/{page}",
+                        Method = "GET"
+                    };
+
+                    return Json(new { total = totalStudents, students = result, links, pages = new[] { currentPageLink } });
+                }
+                else
+                {
+                    return Content(HttpStatusCode.BadRequest, new ErrorDto(501), Configuration.Formatters.JsonFormatter);
+                }
+            }
+            catch (Exception ex)
+            {
+                if (format == "xml")
+                    return Content(HttpStatusCode.InternalServerError, new ErrorDto(500, ex.Message), Configuration.Formatters.XmlFormatter);
+                else
+                    return Content(HttpStatusCode.InternalServerError, new ErrorDto(500, ex.Message), Configuration.Formatters.JsonFormatter);
+            }
+        }
+
+       
         [HttpGet]
         [Route("api/Students.{format?}/{id}")]
         public object Get(int id, HttpRequestMessage request, string format = "json")
@@ -267,14 +386,6 @@ namespace PWS_3.Controllers
                 else if (format == "json" || format == null) return Content(HttpStatusCode.BadRequest, new ErrorDto(500), Configuration.Formatters.JsonFormatter);
                 else return Content(HttpStatusCode.BadRequest, new ErrorDto(501), Configuration.Formatters.JsonFormatter);
             }
-        }
-
-        private void AddXmlElement(XmlDocument xmlDoc, XmlElement parentElement, string elementName, string value)
-        {
-            XmlElement element = xmlDoc.CreateElement(elementName);
-            element.InnerText = value;
-            parentElement.AppendChild(element);
-
         }
 
         [HttpPost]

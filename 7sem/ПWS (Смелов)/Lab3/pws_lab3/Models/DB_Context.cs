@@ -93,5 +93,28 @@ namespace PWS_3.Models
 
             return students.Count();
         }
+
+        public List<Student> GetListWithFilters(int minid, int maxid, string like, string globallike, int limit, int offset)
+        {
+            var students = this.Students.AsQueryable();
+
+            students = students.Where(s => s.Id >= minid && s.Id <= maxid);
+
+            if (!string.IsNullOrEmpty(globallike))
+            {
+                students = students.Where(s => (s.Id.ToString() + s.Name + s.Phone).Contains(globallike));
+            }
+
+            if (!string.IsNullOrEmpty(like))
+            {
+                students = students.Where(s => s.Name.Contains(like));
+            }
+
+            // Добавляем сортировку перед Skip и Take
+            students = students.OrderBy(s => s.Id);
+
+            return students.Skip(offset).Take(limit).ToList();
+        }
+
     }
 }
