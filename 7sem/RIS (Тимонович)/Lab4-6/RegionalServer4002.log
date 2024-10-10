@@ -1,0 +1,1845 @@
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":""}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"error","message":""}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":""}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":""}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"error","message":"dbService.getBODIAsync is not a function"}
+{"level":"error","message":"dbService.getBODIAsync is not a function"}
+{"level":"error","message":"dbService.getBODIAsync is not a function"}
+{"level":"error","message":"dbService.getBODIAsync is not a function"}
+{"level":"error","message":"dbService.getBODIAsync is not a function"}
+{"level":"error","message":"dbService.getBODIAsync is not a function"}
+{"level":"error","message":"dbService.getBODIAsync is not a function"}
+{"level":"error","message":"dbService.getBODIAsync is not a function"}
+{"level":"error","message":"dbService.getBODIAsync is not a function"}
+{"level":"error","message":"dbService.getBODIAsync is not a function"}
+{"level":"error","message":"dbService.getBODIAsync is not a function"}
+{"level":"error","message":"dbService.getBODIAsync is not a function"}
+{"level":"error","message":"dbService.getBODIAsync is not a function"}
+{"level":"error","message":"dbService.getBODIAsync is not a function"}
+{"level":"error","message":"dbService.getBODIAsync is not a function"}
+{"level":"error","message":"dbService.getBODIAsync is not a function"}
+{"level":"error","message":"dbService.getBODIAsync is not a function"}
+{"level":"error","message":"dbService.getBODIAsync is not a function"}
+{"level":"error","message":""}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":"dbService.getBODIAsync is not a function"}
+{"level":"error","message":"dbService.getBODIAsync is not a function"}
+{"level":"error","message":"dbService.getBODIAsync is not a function"}
+{"level":"error","message":"dbService.getBODIAsync is not a function"}
+{"level":"error","message":"dbService.getBODIAsync is not a function"}
+{"level":"error","message":"dbService.getBODIAsync is not a function"}
+{"level":"error","message":"dbService.getBODIAsync is not a function"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"error","message":""}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":""}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":"response.data.filter is not a function"}
+{"level":"error","message":"response.data.filter is not a function"}
+{"level":"error","message":"response.data.filter is not a function"}
+{"level":"error","message":"response.data.filter is not a function"}
+{"level":"error","message":"response.data.filter is not a function"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"error","message":""}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"error","message":"newData is not defined"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"error","message":"newData is not defined"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"error","message":"validatedData is not defined"}
+{"level":"error","message":"validatedData is not defined"}
+{"level":"error","message":"validatedData is not defined"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"error","message":"this.setBODKAsync is not a function"}
+{"level":"error","message":"this.setBODKAsync is not a function"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"error","message":"this.setBODKAsync is not a function"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3000"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"info","message":"Региональный сервис запущен на порту: 4002"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"info","message":"fetchCentralBODIasync | OK"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
+{"level":"error","message":"connect ETIMEDOUT 192.168.43.100:3001"}
