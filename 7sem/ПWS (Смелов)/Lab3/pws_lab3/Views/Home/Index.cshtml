@@ -86,7 +86,12 @@
                 data["limit"] = this.limit;
             }
 
-            data["offset"] = this.limit * (currentPage - 1);
+            // Чтение оффсета из поля ввода
+            if ($("#offset").val() != "") {
+                data["offset"] = $("#offset").val(); // Используем введённое значение
+            } else {
+                data["offset"] = this.limit * (currentPage - 1); // Если оффсет не введён, считаем его
+            }
 
             if ($("#minid").val() != "") data["minid"] = $("#minid").val();
             if ($("#maxid").val() != "") data["maxid"] = $("#maxid").val();
