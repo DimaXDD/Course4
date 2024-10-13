@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:flutter/services.dart';
 
+import 'lab6.dart';
+
+
 void main() {
   runApp(MyApp());
 }
@@ -34,19 +37,6 @@ class PageViewScreen extends StatelessWidget {
   }
 }
 
-class CpuLoad {
-  static const MethodChannel _channel = MethodChannel('com.example.cpu/load');
-
-  static Future<double?> getCpuLoad() async {
-    try {
-      final double? cpuLoad = await _channel.invokeMethod('getCpuLoad');
-      return cpuLoad;
-    } on PlatformException catch (e) {
-      print("Failed to get CPU load: '${e.message}'.");
-      return null;
-    }
-  }
-}
 
 class FirstScreen extends StatelessWidget {
   @override
@@ -149,7 +139,7 @@ class FirstScreen extends StatelessWidget {
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(50),
                     boxShadow: [
                       BoxShadow(
                         color: Colors.black12,
@@ -158,8 +148,20 @@ class FirstScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  padding: EdgeInsets.all(5),
-                  child: Icon(Icons.drag_handle),
+                  padding: EdgeInsets.all(1),
+                  child: Row(
+                    children: [
+                      IconButton(
+                        icon: Icon(Icons.drag_handle),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Lab6()),
+                          );
+                        },
+                      ),
+                    ],
+                  ),
                 ),
               ),
               Positioned(
@@ -377,13 +379,6 @@ class FirstScreen extends StatelessWidget {
               fontWeight: FontWeight.bold,
               color: Colors.black,
             ),
-          ),
-          ElevatedButton(
-            onPressed: () async {
-              double? batteryLevel = await CpuLoad.getCpuLoad();
-              print("Cpu Load: $batteryLevel%");
-            },
-            child: Text("Get Cpu Load"),
           ),
         ],
       ),

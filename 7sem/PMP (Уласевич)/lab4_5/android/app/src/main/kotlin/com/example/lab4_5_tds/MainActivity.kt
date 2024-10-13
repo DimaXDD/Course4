@@ -1,54 +1,25 @@
-package com.example.lab4_5
+package com.example.lab4_5_tds
 
 import android.content.Intent
-import android.net.Uri
-import android.bluetooth.BluetoothAdapter
 import android.content.IntentFilter
 import android.os.BatteryManager
+import android.provider.AlarmClock
 import androidx.annotation.NonNull
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.MethodChannel
-import java.io.RandomAccessFile
 import android.app.ActivityManager
 import android.content.Context
-import android.os.Debug
+import android.widget.Toast
 
 class MainActivity : FlutterActivity() {
-    private val CHANNEL_BLUETOOTH = "com.example.bluetooth/status"
-    private val CHANNEL_BROWSER = "com.example.browser/launch"
     private val CHANNEL_BATTERY = "com.example.battery/level"
-    private val CHANNEL_CPU = "com.example.cpu/load" // Добавьте эту строку
+    private val CHANNEL_CPU = "com.example.cpu/load"
+    private val CHANNEL_ALARM = "com.example.alarm/set"
 
     override fun configureFlutterEngine(@NonNull flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
 
-        // Метод канала для статуса Bluetooth
-        MethodChannel(flutterEngine.dartExecutor.binaryMessenger, CHANNEL_BLUETOOTH).setMethodCallHandler { call, result ->
-            if (call.method == "getBluetoothStatus") {
-                val status = getBluetoothStatus()
-                result.success(status)
-            } else {
-                result.notImplemented()
-            }
-        }
-
-        // Метод канала для запуска браузера
-        MethodChannel(flutterEngine.dartExecutor.binaryMessenger, CHANNEL_BROWSER).setMethodCallHandler { call, result ->
-            if (call.method == "launchBrowser") {
-                val url = call.argument<String>("url")
-                if (url != null) {
-                    launchBrowser(url)
-                    result.success(null)
-                } else {
-                    result.error("INVALID_ARGUMENT", "URL is null", null)
-                }
-            } else {
-                result.notImplemented()
-            }
-        }
-
-        // Метод канала для получения уровня заряда батареи
         MethodChannel(flutterEngine.dartExecutor.binaryMessenger, CHANNEL_BATTERY).setMethodCallHandler { call, result ->
             if (call.method == "getBatteryLevel") {
                 val batteryLevel = getBatteryLevel()
@@ -58,7 +29,6 @@ class MainActivity : FlutterActivity() {
             }
         }
 
-        // Метод канала для получения информации о загрузке процессора
         MethodChannel(flutterEngine.dartExecutor.binaryMessenger, CHANNEL_CPU).setMethodCallHandler { call, result ->
             if (call.method == "getCpuLoad") {
                 val cpuLoad = getCpuLoad()
@@ -67,20 +37,21 @@ class MainActivity : FlutterActivity() {
                 result.notImplemented()
             }
         }
-    }
 
-    private fun getBluetoothStatus(): String {
-        val bluetoothAdapter: BluetoothAdapter? = BluetoothAdapter.getDefaultAdapter()
-        return when {
-            bluetoothAdapter == null -> "No Support"
-            bluetoothAdapter.isEnabled -> "Enabled"
-            else -> "Disabled"
+        MethodChannel(flutterEngine.dartExecutor.binaryMessenger, CHANNEL_ALARM).setMethodCallHandler { call, result ->
+            if (call.method == "setAlarm") {
+                val hour = call.argument<Int>("hour")
+                val minute = call.argument<Int>("minute")
+                if (hour != null && minute != null) {
+                    setAlarm(hour, minute)
+                    result.success(null)
+                } else {
+                    result.error("INVALID_ARGUMENT", "Invalid hour or minute", null)
+                }
+            } else {
+                result.notImplemented()
+            }
         }
-    }
-
-    private fun launchBrowser(url: String) {
-        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
-        startActivity(intent)
     }
 
     private fun getBatteryLevel(): Int {
@@ -89,7 +60,7 @@ class MainActivity : FlutterActivity() {
         }
         val level = batteryIntent?.getIntExtra(BatteryManager.EXTRA_LEVEL, -1) ?: -1
         val scale = batteryIntent?.getIntExtra(BatteryManager.EXTRA_SCALE, -1) ?: -1
-        return (level * 100) / scale // Возвращаем уровень заряда как процент
+        return (level * 100) / scale
     }
 
     private fun getCpuLoad(): Double {
@@ -108,5 +79,24 @@ class MainActivity : FlutterActivity() {
             return -1.0
         }
     }
-}
 
+    private fun setAlarm(hour: Int, minute: Int) {
+        val intent = Intent(AlarmClock.ACTION_SET_ALARM).apply {
+            putExtra(AlarmClock.EXTRA_HOUR, hour)
+            putExtra(AlarmClock.EXTRA_MINUTES, minute)
+            putExtra(AlarmClock.EXTRA_MESSAGE, "Alarm set by app")
+        }
+        try {
+            if (intent.resolveActivity(packageManager) != null) {
+                startActivity(intent)
+                Toast.makeText(this, "Alarm set for $hour:$minute", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "No alarm app found", Toast.LENGTH_SHORT).show()
+            }
+        } catch (e: Exception) {
+            Toast.makeText(this, "Error setting alarm: ${e.message}", Toast.LENGTH_SHORT).show()
+            e.printStackTrace()
+        }
+    }
+
+}
