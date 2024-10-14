@@ -6,7 +6,7 @@
 2) Настраиваем каждый из файлов `с1`, `t1`, `t2`, `t3` (просто меняем подключение к бд и, оппционально, имя БД)<br/>
 3) В файле `src\generator\generator.js` также меняем подключение к БД<br/>
 4) Поскольку лаба сдается сразу с двух устройств, одно будем настраивать как клиент:<br/>
-	4.1) В файле `src\regionalService\utils\ReplicateService.js` прописываем параметры нашего сервера (на сервере пишем ***ipconfig*** и записываем туда наш адрес):<br/>
+	4.1) В файлах `src\regionalService\utils\ReplicateService.js` и `src\regionalService\utils\TimeService.js` прописываем параметры нашего сервера (на сервере пишем ***ipconfig*** и записываем туда наш адрес):<br/>
 ```
 class ReplicateService {
   constructor(url) {
@@ -14,8 +14,8 @@ class ReplicateService {
     this.mainServerAddress = url ?? 'http://<<тут пишем айпишник>>:3001';
   }
 }
-```<br/>
-	4.2) В файле `src\regionalService\utils\TimeService.js`
+```
+
 ```
 class TimeService {
   constructor(url) {
