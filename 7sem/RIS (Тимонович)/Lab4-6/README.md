@@ -14,7 +14,7 @@ class ReplicateService {
     this.mainServerAddress = url ?? 'http://<<тут пишем айпишник>>:3001';
   }
 }
-```
+```<br/>
 	4.2) В файле `src\regionalService\utils\TimeService.js`
 ```
 class TimeService {
