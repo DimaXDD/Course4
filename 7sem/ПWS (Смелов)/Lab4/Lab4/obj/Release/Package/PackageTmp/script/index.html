@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="./jquery-3.4.1.js"></script>
+	<script>
+        function add() {
+            const data = JSON.stringify({ x: $("#x").val(), y: $("#y").val() });
+            console.log(data);
+
+            $.ajax({
+                type: "POST",
+                url: "http://localhost:7654/Simplex.asmx/AddS",
+                data: data,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                processData: false,
+                beforeSend: function(xhr) {
+                    xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+                    xhr.setRequestHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+                    xhr.setRequestHeader("Access-Control-Allow-Headers", "Content-Type");
+                },
+                success: (result) => {
+                    $("#result").text(JSON.stringify(result));
+                },
+                error: (error) => {
+                    console.log(error);
+                },
+            });
+        }
+	</script>
+	<title>Form for ASMX AddS</title>
+</head>
+<body>
+	<h2>Form with AJAX for ASMX AddS</h2>
+	<form id="form1" runat="server">
+		<div>
+			<div>
+				<input type="text" name="x" id="x" placeholder="Enter first number" /> <br />
+				<input type="text" name="y" id="y" placeholder="Enter second number" /> <br />
+				<input type="button" onclick="add()" value="Sum" /> <br />
+			</div>
+			<br />
+			<div id="result"></div>
+		</div>
+	</form>
+</body>
+</html>

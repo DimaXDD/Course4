@@ -1,0 +1,10 @@
+E:\4course\7sem\ПWS (Смелов)\Lab4\WinForms\bin\Debug\WinForms.exe.config
+E:\4course\7sem\ПWS (Смелов)\Lab4\WinForms\bin\Debug\WinForms.exe
+E:\4course\7sem\ПWS (Смелов)\Lab4\WinForms\bin\Debug\WinForms.pdb
+E:\4course\7sem\ПWS (Смелов)\Lab4\WinForms\obj\Debug\WinForms.csproj.AssemblyReference.cache
+E:\4course\7sem\ПWS (Смелов)\Lab4\WinForms\obj\Debug\WinForms.Properties.Resources.resources
+E:\4course\7sem\ПWS (Смелов)\Lab4\WinForms\obj\Debug\WinForms.csproj.GenerateResource.cache
+E:\4course\7sem\ПWS (Смелов)\Lab4\WinForms\obj\Debug\WinForms.csproj.CoreCompileInputs.cache
+E:\4course\7sem\ПWS (Смелов)\Lab4\WinForms\obj\Debug\WinForms.exe
+E:\4course\7sem\ПWS (Смелов)\Lab4\WinForms\obj\Debug\WinForms.pdb
+E:\4course\7sem\ПWS (Смелов)\Lab4\WinForms\obj\Debug\WinForms.Form1.resources

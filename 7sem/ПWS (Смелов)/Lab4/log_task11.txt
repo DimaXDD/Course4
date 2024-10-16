@@ -1,0 +1,16 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <Sum xmlns="http://tds/" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+      <a1>
+        <s>a</s>
+        <k>1</k>
+        <f>3</f>
+      </a1>
+      <a2>
+        <s>b</s>
+        <k>2</k>
+        <f>3565464</f>
+      </a2>
+    </Sum>
+  </s:Body>
+</s:Envelope>
