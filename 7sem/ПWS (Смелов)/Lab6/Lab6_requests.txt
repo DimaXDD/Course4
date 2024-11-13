@@ -1,20 +1,25 @@
-student?$filter=id eq 1
-student?$filter=id%20eq%201&$format=json
-student?$select=name&$format=application%2Fatom%2Bxml
-student?$select=Name&$format=json
-student?$orderby=name&$format=json
-student(1)?$format=json
+student?$format=json - получить всех студентов
+student?$filter=startswith(name, 'A')&$format=json - получить студентов с именем, начинающимся на 'A'
+student?$filter=contains(name, 'John')&$format=json - получить студентов, у которых имя содержит 'John'
+student/$count?$format=json - получить количество студентов
+student?$orderby=name&$format=json - получить студентов, отсортированных по имени
+student?$orderby=name desc&$format=json - получить студентов, отсортированных по имени в обратном порядке
+student?$select=id,name&$format=json - получить студентов с определёнными полями (например, id и name)
+student?$top=5&$format=json - получить студентов с ограничением на количество возвращаемых записей (например, 5)
+student(1)?$format=json - получение студента по PK (Primary Key)
+student?$filter=id eq 1&$format=json - получить студента с id равным 1
+student?$expand=note&$format=json - с помощью expand включить связанные записи
 
-student – таблица
-student(1) – по PK
-student(1)/note – оценки 1-го студента
-note?$filter=note1%20gt%202
+note?$format=json - получить все оценки
+student(1)/note?$format=json – получение оценок 1-го студента (первый по PK)]
+student?$filter=name eq 'Дима'&$expand=note&$format=json - получение оценок студента с именем Dima
+note?$filter=note1 ge 5&$format=json - получить оценки больше или равные 5
+note?$filter=note1 gt 5&$format=json - получить оценки больше 5
+note?$filter=note1 ge 7 and note1 ne 10&$format=json - получить оценки, не равные 10 и больше 7
+note?$filter=not (note1 eq 10)&$format=json - возвращает только те записи, у которых значение поля note1 не равно 10
+student(1)/note?$select=id,note1&$format=json - получить оценки, связанные с опред.студентом, и только опред. поля
 
-/Student?$select=Name&$format=json	вывести нек. поля
-/Student?$expand=Note&$format=json	с помощью expand включить связанные записи
-/Student?$orderby=Name&$format=json	в каком порядке
-note?$filter=note1%20ge%208%20and%20note1%20ne%2010&$format=json
-note?$filter=not%20(note1%20eq%2010)
 ge/le больше или равно/меньше или равно
+gt/lt больше/меньше
 ne - not equals
 and or
