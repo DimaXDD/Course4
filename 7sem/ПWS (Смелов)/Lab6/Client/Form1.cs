@@ -88,7 +88,7 @@ namespace Client
                 int id = this.listBox1.SelectedIndex;
                 if (textBox3.Text != "" && id != 0)
                 {
-                    StudentsEntities service = new StudentsEntities(new Uri("http://localhost:9898/Service1.svc"));
+                    StudentsEntities service = new StudentsEntities(new Uri("http://localhost:51565//Service1.svc"));
                     string item = (string)listBox1.Items[id];
                     int index = item.IndexOf(' ');
                     string result = item.Substring(0, index);
@@ -181,7 +181,7 @@ namespace Client
 				//int id = 1;
                 if (textBox8.Text != "" && textBox7.Text != "" && textBox2.Text != "" && id != 0)
                 {
-                    StudentsEntities service = new StudentsEntities(new Uri("http://localhost:9898/Service1.svc"));
+                    StudentsEntities service = new StudentsEntities(new Uri("http://localhost:51565/Service1.svc"));
                     string item = (string)listBox2.Items[id];
                     int index = item.IndexOf(' ');
                     string result = item.Substring(0, index);

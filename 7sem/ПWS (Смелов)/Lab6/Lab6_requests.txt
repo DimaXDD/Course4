@@ -1,18 +1,17 @@
 student?$format=json - получить всех студентов
 student?$filter=startswith(name, 'A')&$format=json - получить студентов с именем, начинающимся на 'A'
-student?$filter=contains(name, 'John')&$format=json - получить студентов, у которых имя содержит 'John'
-student/$count?$format=json - получить количество студентов
+student?$filter=contains(name, 'Dima')&$format=json - получить студентов, у которых имя содержит 'Dima'
 student?$orderby=name&$format=json - получить студентов, отсортированных по имени
 student?$orderby=name desc&$format=json - получить студентов, отсортированных по имени в обратном порядке
 student?$select=id,name&$format=json - получить студентов с определёнными полями (например, id и name)
 student?$top=5&$format=json - получить студентов с ограничением на количество возвращаемых записей (например, 5)
 student(1)?$format=json - получение студента по PK (Primary Key)
+student(1)/note?$format=json – получение оценок 1-го студента (первый по PK)
 student?$filter=id eq 1&$format=json - получить студента с id равным 1
+student?$filter=name eq 'Dima'&$expand=note&$format=json - получение оценок студента с именем Dima
 student?$expand=note&$format=json - с помощью expand включить связанные записи
 
 note?$format=json - получить все оценки
-student(1)/note?$format=json – получение оценок 1-го студента (первый по PK)]
-student?$filter=name eq 'Дима'&$expand=note&$format=json - получение оценок студента с именем Dima
 note?$filter=note1 ge 5&$format=json - получить оценки больше или равные 5
 note?$filter=note1 gt 5&$format=json - получить оценки больше 5
 note?$filter=note1 ge 7 and note1 ne 10&$format=json - получить оценки, не равные 10 и больше 7
