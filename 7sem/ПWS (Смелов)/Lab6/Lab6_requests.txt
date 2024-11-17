@@ -5,7 +5,7 @@ student?$orderby=name&$format=json - получить студентов, отс
 student?$orderby=name desc&$format=json - получить студентов, отсортированных по имени в обратном порядке
 student?$select=id,name&$format=json - получить студентов с определёнными полями (например, id и name)
 student?$top=5&$format=json - получить студентов с ограничением на количество возвращаемых записей (например, 5)
-student(1)?$format=json - получение студента по PK (Primary Key)
+student(1)?$format=json - получение студента по Primary Key
 student(1)/note?$format=json – получение оценок 1-го студента (первый по PK)
 student?$filter=id eq 1&$format=json - получить студента с id равным 1
 student?$filter=name eq 'Dima'&$expand=note&$format=json - получение оценок студента с именем Dima
