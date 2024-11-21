@@ -1,0 +1,17 @@
+E:\Course4\7sem\ПWS (Смелов)\Lab7\Client\bin\Debug\net6.0-windows\Client.exe
+E:\Course4\7sem\ПWS (Смелов)\Lab7\Client\bin\Debug\net6.0-windows\Client.deps.json
+E:\Course4\7sem\ПWS (Смелов)\Lab7\Client\bin\Debug\net6.0-windows\Client.runtimeconfig.json
+E:\Course4\7sem\ПWS (Смелов)\Lab7\Client\bin\Debug\net6.0-windows\Client.dll
+E:\Course4\7sem\ПWS (Смелов)\Lab7\Client\bin\Debug\net6.0-windows\Client.pdb
+E:\Course4\7sem\ПWS (Смелов)\Lab7\Client\obj\Debug\net6.0-windows\Client.Form1.resources
+E:\Course4\7sem\ПWS (Смелов)\Lab7\Client\obj\Debug\net6.0-windows\Client.csproj.GenerateResource.cache
+E:\Course4\7sem\ПWS (Смелов)\Lab7\Client\obj\Debug\net6.0-windows\Client.GeneratedMSBuildEditorConfig.editorconfig
+E:\Course4\7sem\ПWS (Смелов)\Lab7\Client\obj\Debug\net6.0-windows\Client.AssemblyInfoInputs.cache
+E:\Course4\7sem\ПWS (Смелов)\Lab7\Client\obj\Debug\net6.0-windows\Client.AssemblyInfo.cs
+E:\Course4\7sem\ПWS (Смелов)\Lab7\Client\obj\Debug\net6.0-windows\Client.csproj.CoreCompileInputs.cache
+E:\Course4\7sem\ПWS (Смелов)\Lab7\Client\obj\Debug\net6.0-windows\Client.sourcelink.json
+E:\Course4\7sem\ПWS (Смелов)\Lab7\Client\obj\Debug\net6.0-windows\Client.dll
+E:\Course4\7sem\ПWS (Смелов)\Lab7\Client\obj\Debug\net6.0-windows\refint\Client.dll
+E:\Course4\7sem\ПWS (Смелов)\Lab7\Client\obj\Debug\net6.0-windows\Client.pdb
+E:\Course4\7sem\ПWS (Смелов)\Lab7\Client\obj\Debug\net6.0-windows\Client.genruntimeconfig.cache
+E:\Course4\7sem\ПWS (Смелов)\Lab7\Client\obj\Debug\net6.0-windows\ref\Client.dll

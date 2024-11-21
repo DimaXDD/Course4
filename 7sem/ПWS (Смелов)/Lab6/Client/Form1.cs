@@ -11,7 +11,7 @@ namespace Client
         public Form1()
         {
             InitializeComponent();
-            StudentsEntities service = new StudentsEntities(new Uri("http://localhost:9898/Service1.svc"));
+            WSTDSEntities service = new WSTDSEntities(new Uri("http://localhost:9898/Service1.svc"));
 
             foreach (var s in service.student.AsEnumerable())
             {
@@ -29,7 +29,7 @@ namespace Client
             {
                 try
                 {
-                    StudentsEntities service = new StudentsEntities(new Uri("http://localhost:9898/Service1.svc"));
+                    WSTDSEntities service = new WSTDSEntities(new Uri("http://localhost:9898/Service1.svc"));
                     student student = new student() { };
                     student.name = textBox1.Text;
                     service.AddTostudent(student);
@@ -56,7 +56,7 @@ namespace Client
         {
             try
             {
-                StudentsEntities service = new StudentsEntities(new Uri("http://localhost:9898/Service1.svc"));
+                WSTDSEntities service = new WSTDSEntities(new Uri("http://localhost:9898/Service1.svc"));
 				int id = this.listBox1.SelectedIndex;
 				//int id = 1;
                 if (id != -1)
@@ -88,7 +88,7 @@ namespace Client
                 int id = this.listBox1.SelectedIndex;
                 if (textBox3.Text != "" && id != 0)
                 {
-                    StudentsEntities service = new StudentsEntities(new Uri("http://localhost:51565//Service1.svc"));
+                    WSTDSEntities service = new WSTDSEntities(new Uri("http://localhost:9898/Service1.svc"));
                     string item = (string)listBox1.Items[id];
                     int index = item.IndexOf(' ');
                     string result = item.Substring(0, index);
@@ -96,7 +96,8 @@ namespace Client
                     var student = service.student.AsEnumerable().First(i => i.id == idstudent);
                     student.name = textBox3.Text;
                     service.UpdateObject(student);
-                    service.SaveChanges();
+                    service.AttachTo("student", student);
+                    service.UpdateObject(student);
                     this.listBox1.Items.Clear();
                     foreach (var s in service.student.AsEnumerable())
                     {
@@ -120,7 +121,7 @@ namespace Client
             {
                 try
                 {
-                    StudentsEntities service = new StudentsEntities(new Uri("http://localhost:9898/Service1.svc"));
+                    WSTDSEntities service = new WSTDSEntities(new Uri("http://localhost:9898/Service1.svc"));
                     note note = new note() { };
                     note.stud_id = (int?)Int64.Parse(textBox4.Text);
                     note.subject = textBox5.Text;
@@ -149,7 +150,7 @@ namespace Client
         {
             try
             {
-                StudentsEntities service = new StudentsEntities(new Uri("http://localhost:9898/Service1.svc"));
+                WSTDSEntities service = new WSTDSEntities(new Uri("http://localhost:9898/Service1.svc"));
                 int id = this.listBox2.SelectedIndex;
                 if (id != -1)
                 {
@@ -181,7 +182,7 @@ namespace Client
 				//int id = 1;
                 if (textBox8.Text != "" && textBox7.Text != "" && textBox2.Text != "" && id != 0)
                 {
-                    StudentsEntities service = new StudentsEntities(new Uri("http://localhost:51565/Service1.svc"));
+                    WSTDSEntities service = new WSTDSEntities(new Uri("http://localhost:9898/Service1.svc"));
                     string item = (string)listBox2.Items[id];
                     int index = item.IndexOf(' ');
                     string result = item.Substring(0, index);

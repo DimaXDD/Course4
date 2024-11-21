@@ -13,10 +13,10 @@ namespace PWS_Lab6
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class StudentsEntities : DbContext
+    public partial class WSTDSEntities : DbContext
     {
-        public StudentsEntities()
-            : base("name=StudentsEntities")
+        public WSTDSEntities()
+            : base("name=WSTDSEntities")
         {
         }
     

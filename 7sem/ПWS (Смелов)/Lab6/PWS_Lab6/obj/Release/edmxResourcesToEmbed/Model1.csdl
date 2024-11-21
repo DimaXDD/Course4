@@ -30,7 +30,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="StudentsEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="WSTDSEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="note" EntityType="Self.note" />
     <EntitySet Name="student" EntityType="Self.student" />
     <AssociationSet Name="FK__note__stud_id__398D8EEE" Association="Self.FK__note__stud_id__398D8EEE">

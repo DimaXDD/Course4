@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Хранилище WSTDSModelContainer" CdmEntityContainer="StudentsEntities">
+  <EntityContainerMapping StorageEntityContainer="Хранилище WSTDSModelContainer" CdmEntityContainer="WSTDSEntities">
     <EntitySetMapping Name="note">
       <EntityTypeMapping TypeName="WSTDSModel.note">
         <MappingFragment StoreEntitySet="note">

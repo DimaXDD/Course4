@@ -76,7 +76,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="StudentsEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="WSTDSEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="note" EntityType="Self.note" />
           <EntitySet Name="student" EntityType="Self.student" />
           <AssociationSet Name="FK__note__stud_id__398D8EEE" Association="Self.FK__note__stud_id__398D8EEE">
@@ -89,7 +89,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище WSTDSModelContainer" CdmEntityContainer="StudentsEntities">
+        <EntityContainerMapping StorageEntityContainer="Хранилище WSTDSModelContainer" CdmEntityContainer="WSTDSEntities">
           <EntitySetMapping Name="note">
             <EntityTypeMapping TypeName="WSTDSModel.note">
               <MappingFragment StoreEntitySet="note">

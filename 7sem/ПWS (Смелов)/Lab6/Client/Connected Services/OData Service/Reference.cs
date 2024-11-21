@@ -9,20 +9,20 @@
 //------------------------------------------------------------------------------
 
 // Original file name:
-// Generation date: 11.11.2024 22:01:58
+// Generation date: 20.11.2024 21:55:32
 namespace WSTDSModel
 {
     
     /// <summary>
-    /// There are no comments for StudentsEntities in the schema.
+    /// There are no comments for WSTDSEntities in the schema.
     /// </summary>
-    public partial class StudentsEntities : global::System.Data.Services.Client.DataServiceContext
+    public partial class WSTDSEntities : global::System.Data.Services.Client.DataServiceContext
     {
         /// <summary>
-        /// Initialize a new StudentsEntities object.
+        /// Initialize a new WSTDSEntities object.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public StudentsEntities(global::System.Uri serviceRoot) : 
+        public WSTDSEntities(global::System.Uri serviceRoot) : 
                 base(serviceRoot, global::System.Data.Services.Common.DataServiceProtocolVersion.V3)
         {
             this.OnContextCreated();
@@ -107,12 +107,12 @@ namespace WSTDSModel
                 "ent\"><PropertyRef Name=\"id\" /></Principal><Dependent Role=\"note\"><PropertyRef Na" +
                 "me=\"stud_id\" /></Dependent></ReferentialConstraint></Association></Schema><Schem" +
                 "a Namespace=\"PWS_Lab6\" xmlns=\"http://schemas.microsoft.com/ado/2009/11/edm\"><Ent" +
-                "ityContainer Name=\"StudentsEntities\" m:IsDefaultEntityContainer=\"true\"><EntitySe" +
-                "t Name=\"note\" EntityType=\"WSTDSModel.note\" /><EntitySet Name=\"student\" EntityTyp" +
-                "e=\"WSTDSModel.student\" /><AssociationSet Name=\"FK__note__stud_id__398D8EEE\" Asso" +
-                "ciation=\"WSTDSModel.FK__note__stud_id__398D8EEE\"><End Role=\"note\" EntitySet=\"not" +
-                "e\" /><End Role=\"student\" EntitySet=\"student\" /></AssociationSet></EntityContaine" +
-                "r></Schema></edmx:DataServices></edmx:Edmx>";
+                "ityContainer Name=\"WSTDSEntities\" m:IsDefaultEntityContainer=\"true\"><EntitySet N" +
+                "ame=\"note\" EntityType=\"WSTDSModel.note\" /><EntitySet Name=\"student\" EntityType=\"" +
+                "WSTDSModel.student\" /><AssociationSet Name=\"FK__note__stud_id__398D8EEE\" Associa" +
+                "tion=\"WSTDSModel.FK__note__stud_id__398D8EEE\"><End Role=\"note\" EntitySet=\"note\" " +
+                "/><End Role=\"student\" EntitySet=\"student\" /></AssociationSet></EntityContainer><" +
+                "/Schema></edmx:DataServices></edmx:Edmx>";
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
             private static string GetConcatenatedEdmxString()
             {
