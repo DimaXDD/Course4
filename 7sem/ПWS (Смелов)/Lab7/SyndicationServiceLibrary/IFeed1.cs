@@ -21,6 +21,9 @@ namespace SyndicationServiceLibrary
     [ServiceKnownType(typeof(Rss20FeedFormatter))]
     public interface IFeed1
     {
+        [OperationContract]
+        [WebGet(UriTemplate = "*", BodyStyle = WebMessageBodyStyle.Bare)]
+        SyndicationFeedFormatter CreateFeed();
 
         [OperationContract]
         [WebGet(UriTemplate = "students/{studentId}/notes/{formatRequest}", BodyStyle = WebMessageBodyStyle.Bare)]

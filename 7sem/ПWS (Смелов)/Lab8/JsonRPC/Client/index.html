@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html data-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <title>PWS8</title>
+
+</head>
+<body>
+    <div class="flex flex-col">
+        <div class="w-40">
+
+            <div class="form-control">
+                k
+                <input type="text" id="k" class="input input-sm bg-neutral" />
+            </div>
+            <div class="form-control">
+                x
+                <input type="text" id="v" class="input input-sm bg-neutral" />
+            </div>
+
+        </div>
+        <br />
+        <div class="flex flex-row">
+            <button class="btn btn-primary min-h-min h-8 ms-2 px-2" onclick="invoke('GetM')">GetM</button>
+            <button class="btn btn-primary min-h-min h-8 ms-2 px-2" onclick="invoke('SetM')">SetM</button>
+            <button class="btn btn-primary min-h-min h-8 ms-2 px-2" onclick="invoke('AddM')">AddM</button>
+            <button class="btn btn-primary min-h-min h-8 ms-2 px-2" onclick="invoke('SubM')">SubM</button>
+            <button class="btn btn-primary min-h-min h-8 ms-2 px-2" onclick="invoke('MulM')">MulM</button>
+            <button class="btn btn-primary min-h-min h-8 ms-2 px-2" onclick="invoke('DivM')">DivM</button>
+            <button class="btn btn-primary min-h-min h-8 ms-2 px-2" onclick="invoke('ErrorExit')">ErrorExit</button>
+        </div>
+        <pre id="res" class="border rounded w-fit p-5">
+        </pre>
+    </div>
+
+    <script>
+        function invoke(methodName) {
+            var k = document.getElementById('k').value;
+            var v = document.getElementById('v').value;
+            var url = 'http://localhost:61882/api/jr';
+            var json = {
+                "id": 1,
+                "jsonrpc": "2.0",
+                "params": {
+                    "k": k,
+                    "x": v
+                },
+                "method": methodName
+            }
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    Accept: 'application/json',
+                    "Content-Type": 'application/json',
+                },
+                body: JSON.stringify(json, null, 4),
+            }).then(function (response) {
+                return response.json();
+            }).then(function (data) {
+                document.getElementById('res').innerHTML = JSON.stringify(data, null, 4);
+            });
+        }
+    </script>
+</body>
+</html>

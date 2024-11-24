@@ -14,7 +14,7 @@ namespace SyndicationServiceLibrary
         [JsonProperty("note1")]
         public int Note1 { get; set; }
     }
- 
+
     class NoteResponse
     {
         public Note[] Value { get; set; }

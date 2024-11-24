@@ -18,31 +18,44 @@ namespace SyndicationServiceLibrary
     {
         public SyndicationFeedFormatter CreateFeed()
         {
-            // Создать новый веб-канал.
-            SyndicationFeed feed = new SyndicationFeed("Feed Title", "A WCF Syndication Feed", null);
+            SyndicationFeed feed = new SyndicationFeed("Subjects & Notes", "Get list of notes by all subjects for this student", null);
             List<SyndicationItem> items = new List<SyndicationItem>();
+            string url = "http://localhost:9898/Service1.svc/note?$select=subject,note1&$format=json";
 
-            // Создать новый элемент рассылки.
-            SyndicationItem item = new SyndicationItem("An item", "Item content", null);
-            items.Add(item);
+            try
+            {
+                var request = (HttpWebRequest)WebRequest.Create(url);
+                request.Method = "GET";
+
+                using (var response = (HttpWebResponse)request.GetResponse())
+                using (var reader = new StreamReader(response.GetResponseStream(), Encoding.UTF8))
+                {
+                    string responseString = reader.ReadToEnd();
+                    var notesResponse = JsonConvert.DeserializeObject<NoteResponse>(responseString);
+                    foreach (var note in notesResponse.Value)
+                    {
+                        string title = $"Предмет: {note.Subj}";
+                        string content = $"Оценка: {note.Note1}";
+                        items.Add(new SyndicationItem(title, content, null));
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                items.Add(new SyndicationItem("Error", $"Failed to retrieve grades: {ex.Message}", null));
+            }
             feed.Items = items;
-
-            // Возвращать канал ATOM или RSS, основываясь на строке запроса
-            // RSS-> http://localhost:8733/Design_Time_Addresses/SyndicationServiceLibrary/Feed1/
-            // atom -> http://localhost:8733/Design_Time_Addresses/SyndicationServiceLibrary/Feed1/?format=atom
             string query = WebOperationContext.Current.IncomingRequest.UriTemplateMatch.QueryParameters["format"];
-            SyndicationFeedFormatter formatter = null;
             if (query == "atom")
             {
-                formatter = new Atom10FeedFormatter(feed);
+                return new Atom10FeedFormatter(feed);
             }
             else
             {
-                formatter = new Rss20FeedFormatter(feed);
+                return new Rss20FeedFormatter(feed);
             }
-
-            return formatter;
         }
+
 
         public SyndicationFeedFormatter GetStudentNotes(string studentId, string formatRequest)
         {
