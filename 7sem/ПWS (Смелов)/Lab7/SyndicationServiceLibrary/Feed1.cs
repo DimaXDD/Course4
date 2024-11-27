@@ -34,8 +34,8 @@ namespace SyndicationServiceLibrary
                     var notesResponse = JsonConvert.DeserializeObject<NoteResponse>(responseString);
                     foreach (var note in notesResponse.Value)
                     {
-                        string title = $"Предмет: {note.Subj}";
-                        string content = $"Оценка: {note.Note1}";
+                        string title = $"Subject: {note.Subj}";
+                        string content = $"Note: {note.Note1}";
                         items.Add(new SyndicationItem(title, content, null));
                     }
                 }
