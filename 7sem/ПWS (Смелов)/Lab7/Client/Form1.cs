@@ -1,4 +1,4 @@
-using System;
+п»їusing System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -29,7 +29,7 @@ namespace Client
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Ошибка: {ex.Message}");
+                    MessageBox.Show($"РћС€РёР±РєР°: {ex.Message}");
                 }
             }
         }
@@ -49,7 +49,7 @@ namespace Client
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Ошибка: {ex.Message}");
+                    MessageBox.Show($"РћС€РёР±РєР°: {ex.Message}");
                 }
             }
         }
@@ -69,7 +69,7 @@ namespace Client
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ошибка при форматировании XML: {ex.Message}");
+                MessageBox.Show($"РћС€РёР±РєР° РїСЂРё С„РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёРё XML: {ex.Message}");
                 return xmlContent;
             }
         }
