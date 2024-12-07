@@ -16,19 +16,42 @@ namespace Lab8.Controllers
         private static bool ignoreMethods = false;
 
         [System.Web.Http.HttpPut]
-
         public object[] Multi([FromBody] ReqJsonRPC[] body)
         {
+            if (body == null)
+            {
+                throw new ArgumentNullException(nameof(body), "Request body is null");
+            }
+
             int length = body.Length;
             object[] result = new object[length];
+            bool methodsIgnored = false;
 
             for (int i = 0; i < length; i++)
-                result[i] = Single(body[i]);
+            {
+                if (methodsIgnored)
+                {
+                    result[i] = GetError(body[i].Id, body[i].JsonRPC, new ErrorJsonRPC
+                    {
+                        Code = -32601,
+                        Message = "Methods are ignored after ErrorExit",
+                        Data = null
+                    });
+                    continue;
+                }
 
-            //result.JsonRequestBehavior = JsonRequestBehavior.AllowGet;
+                var singleResult = Single(body[i]);
+                result[i] = singleResult;
+
+                if (body[i].Method == "ErrorExit")
+                {
+                    HttpContext.Current.Session.Clear();
+                    methodsIgnored = true;
+                }
+            }
+
             return result;
         }
-
 
         [System.Web.Http.HttpPost]
         public object Single(ReqJsonRPC body)
@@ -36,15 +59,31 @@ namespace Lab8.Controllers
             if (ignoreMethods)
                 return GetError(body.Id, body.JsonRPC, new ErrorJsonRPC { Message = "Methods are not available", Code = -32601 });
 
-            //int length = body.Length;
-
+            if (body.Params == null)
+            {
+                return GetError(body.Id, body.JsonRPC, new ErrorJsonRPC { Message = "Params is null", Code = -32602 });
+            }
 
             string method = body.Method;
             DataModel param = body.Params;
+
             string key = param.Key;
-            int value = int.Parse(param.Value == null || param.Value == "" ? "0" : param.Value); // default value = 0
+            if (key == null)
+            {
+                return GetError(body.Id, body.JsonRPC, new ErrorJsonRPC { Message = "Key is null", Code = -32602 });
+            }
+
+            int value;
+            try
+            {
+                value = int.Parse(param.Value == null || param.Value == "" ? "0" : param.Value);
+            }
+            catch (FormatException)
+            {
+                return GetError(body.Id, body.JsonRPC, new ErrorJsonRPC { Message = "Invalid value format", Code = -32602 });
+            }
+
             int? result = null;
-            //var ret = new JsonResult();
 
             switch (method)
             {
@@ -76,7 +115,7 @@ namespace Lab8.Controllers
                 case "DivM":
                     {
                         if (value == 0)
-                            return GetError(body.Id, body.JsonRPC, new ErrorJsonRPC { Message = string.Format("Attempt to divide by zero", body.Method), Code = -32602 });
+                            return GetError(body.Id, body.JsonRPC, new ErrorJsonRPC { Message = "Attempt to divide by zero", Code = -32602 });
                         result = DivM(key, value);
                         break;
                     }
@@ -90,30 +129,31 @@ namespace Lab8.Controllers
                         return GetError(body.Id, body.JsonRPC, new ErrorJsonRPC { Message = string.Format("Function {0} is not found", body.Method), Code = -32601 });
                     }
             }
-            return
-             new ResJsonRPC()
-             {
-                 Id = body.Id,
-                 JsonRPC = body.JsonRPC,
-                 Method = body.Method,
-                 Result = result
-             };
 
+            if (result == null)
+            {
+                return GetError(body.Id, body.JsonRPC, new ErrorJsonRPC { Message = "No result available", Code = -32603 });
+            }
 
+            return new ResJsonRPC()
+            {
+                Id = body.Id,
+                JsonRPC = body.JsonRPC,
+                Method = body.Method,
+                Result = result
+            };
         }
 
 
         ////////////////////////////////////
         private object GetError(string id, string jsonRPC, ErrorJsonRPC error)
         {
-
             return new ResJsonRPCError()
             {
                 Id = id,
                 JsonRPC = jsonRPC,
                 Error = error
             };
-
         }
         ////////////////////////////////////
         private int? SetM(string k, int x)
@@ -163,7 +203,6 @@ namespace Lab8.Controllers
         private void ErrorExit()
         {
             HttpContext.Current.Session.Clear();
-            //HttpContext.Session["MethodsIgnore"] = true;
             ignoreMethods = true;
         }
     }
