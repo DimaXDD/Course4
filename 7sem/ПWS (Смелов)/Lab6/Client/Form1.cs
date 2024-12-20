@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Data;
+using System.Data.Services.Client;
 using System.Linq;
+using System.Security.Policy;
 using System.Windows.Forms;
 using WSTDSModel;
 
@@ -57,8 +59,8 @@ namespace Client
             try
             {
                 WSTDSEntities service = new WSTDSEntities(new Uri("http://localhost:9898/Service1.svc"));
-				int id = this.listBox1.SelectedIndex;
-				//int id = 1;
+                int id = this.listBox1.SelectedIndex;
+                //int id = 1;
                 if (id != -1)
                 {
                     string item = (string)listBox1.Items[id];
@@ -86,7 +88,11 @@ namespace Client
             try
             {
                 int id = this.listBox1.SelectedIndex;
-                if (textBox3.Text != "" && id != 0)
+                if (this.listBox1.SelectedIndex > 0 == false)
+                {
+                    label9.Text = "Выберите студента в списке";
+                }
+                else if (textBox3.Text != "" && id != 0)
                 {
                     WSTDSEntities service = new WSTDSEntities(new Uri("http://localhost:9898/Service1.svc"));
                     string item = (string)listBox1.Items[id];
@@ -96,8 +102,8 @@ namespace Client
                     var student = service.student.AsEnumerable().First(i => i.id == idstudent);
                     student.name = textBox3.Text;
                     service.UpdateObject(student);
-                    service.AttachTo("student", student);
-                    service.UpdateObject(student);
+                    service.SaveChanges(SaveChangesOptions.ReplaceOnUpdate);
+                    //nesoxredit
                     this.listBox1.Items.Clear();
                     foreach (var s in service.student.AsEnumerable())
                     {
@@ -106,7 +112,7 @@ namespace Client
                 }
                 else
                 {
-                    label9.Text = "Ввеедите данные";
+                    label9.Text = "Введите данные";
                 }
             }
             catch (Exception exc)
@@ -178,8 +184,8 @@ namespace Client
         {
             try
             {
-				int id = this.listBox2.SelectedIndex;
-				//int id = 1;
+                int id = this.listBox2.SelectedIndex;
+                //int id = 1;
                 if (textBox8.Text != "" && textBox7.Text != "" && textBox2.Text != "" && id != 0)
                 {
                     WSTDSEntities service = new WSTDSEntities(new Uri("http://localhost:9898/Service1.svc"));
@@ -192,7 +198,7 @@ namespace Client
                     note.subject = textBox7.Text;
                     note.note1 = (int?)Int64.Parse(textBox2.Text);
                     service.UpdateObject(note);
-                    service.SaveChanges();
+                    service.SaveChanges(SaveChangesOptions.ReplaceOnUpdate);
                     this.listBox2.Items.Clear();
                     foreach (var n in service.note.AsEnumerable())
                     {
@@ -208,6 +214,11 @@ namespace Client
             {
                 label11.Text = exc.Message;
             }
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
